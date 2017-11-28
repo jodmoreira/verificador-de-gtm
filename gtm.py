@@ -16,7 +16,7 @@ with open("lista.txt", "r+") as urls:
 		for linha in urls:
 			try:
 				linha = linha.strip()
-				requisicao = requests.get(linha.strip()) #strip verifica se ele realmente tirou a nova linha, caso tenha ficado
+				requisicao = requests.get(linha.strip())
 				requisicao = requisicao.text
 				soup = BeautifulSoup(requisicao, "html.parser")
 				gtm = soup.findAll('script')
