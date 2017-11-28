@@ -9,8 +9,6 @@ def escreversaida():
 	dataframe = pd.DataFrame(records)
 	dataframe.to_csv("saida.csv", mode="w", header=["GTM", "Pag"])
 
-# codGTM = raw_input('Escreva o codigo do container do GTM: ')
-
 with open("lista.txt", "r+") as urls:
 	with open("saida.txt", "w+") as saida:
 		x = 0
